@@ -1,1 +1,8 @@
--- In this SQL file, write (and comment!) the typical SQL queries users will run on your database
+SELECT "u"."first_name", "u"."last_name",
+    "u"."username", 
+    "p"."profile_picture", 
+    "p"."bio",
+    "p"."social_links" 
+    FROM "users" AS "u"
+    JOIN "profiles" AS "p" ON "u"."id" = "p"."user_id";
+

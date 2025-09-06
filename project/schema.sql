@@ -3,12 +3,12 @@ CREATE TYPE user_role AS ENUM ('admin', 'user');
 CREATE TABLE users (
     id SERIAL PRIMARY KEY,
     first_name VARCHAR(100) NOT NULL,
-    second_name VARCHAR(100) NOT NULL,
+    last_name VARCHAR(100) NOT NULL,
     email VARCHAR(180) NOT NULL UNIQUE,
     username VARCHAR(150) NOT NULL UNIQUE,
     password VARCHAR NOT NULL,
     role user_role NOT NULL,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    created_at TIMESTAMPTZ NOT NULL DEFAULT CURRENT_TIMESTAMP
 );
 
 CREATE TABLE profiles (
@@ -43,13 +43,13 @@ CREATE TABLE likes (
 CREATE TABLE category (
     id SERIAL PRIMARY KEY,
     title VARCHAR(150) NOT NULL UNIQUE,
-    slug VARCHAR(255) NOT NULL UNIQUE,
+    slug VARCHAR(255) NOT NULL UNIQUE
 );
 
 CREATE TABLE post_category (
     post_id INT NOT NULL,
     category_id INT NOT NULL,
     PRIMARY KEY (post_id, category_id),
-    FOREIGN KEY (post_id) REFERENCES posts (id) ON DELETE CASCADE
-    FOREIGN KEY (category_id) REFERENCES category (id) ON DELETE CASCADE,
+    FOREIGN KEY (post_id) REFERENCES posts (id) ON DELETE CASCADE,
+    FOREIGN KEY (category_id) REFERENCES category (id) ON DELETE CASCADE
 );
