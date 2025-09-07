@@ -7,7 +7,7 @@ CREATE TABLE users (
     email VARCHAR(180) NOT NULL UNIQUE,
     username VARCHAR(150) NOT NULL UNIQUE,
     password VARCHAR NOT NULL,
-    role user_role NOT NULL,
+    role user_role NOT NULL DEFAULT 'user',
     created_at TIMESTAMPTZ NOT NULL DEFAULT CURRENT_TIMESTAMP
 );
 
@@ -35,21 +35,22 @@ CREATE TABLE posts (
 CREATE TABLE likes (
     user_id INT NOT NULL,
     post_id INT NOT NULL,
+    created_at TIMESTAMPTZ DEFAULT CURRENT_TIMESTAMP NOT NULL,
     PRIMARY KEY (user_id, post_id),
     FOREIGN KEY (user_id) REFERENCES users (id) ON DELETE CASCADE,
     FOREIGN KEY (post_id) REFERENCES posts (id) ON DELETE CASCADE
 );
 
-CREATE TABLE category (
+CREATE TABLE categories (
     id SERIAL PRIMARY KEY,
     title VARCHAR(150) NOT NULL UNIQUE,
     slug VARCHAR(255) NOT NULL UNIQUE
 );
 
-CREATE TABLE post_category (
+CREATE TABLE post_categories (
     post_id INT NOT NULL,
     category_id INT NOT NULL,
     PRIMARY KEY (post_id, category_id),
     FOREIGN KEY (post_id) REFERENCES posts (id) ON DELETE CASCADE,
-    FOREIGN KEY (category_id) REFERENCES category (id) ON DELETE CASCADE
+    FOREIGN KEY (category_id) REFERENCES categories (id) ON DELETE CASCADE
 );

@@ -1,26 +1,13 @@
 INSERT INTO users (first_name, last_name, email, username, password, role) VALUES
-('Juan', 'Santos', 'juan.santos@example.com', 'juansantos', '$2b$12$examplehashedpassword123abc', 'user'),
-('Maria', 'Reyes', 'maria.reyes@example.com', 'mariareyes', '$2b$12$examplehashedpassword234def', 'user'),
-('Jose', 'Garcia', 'jose.garcia@example.com', 'josegarcia', '$2b$12$examplehashedpassword345ghi', 'user'),
-('Luis', 'Cruz', 'luis.cruz@example.com', 'luiscruz', '$2b$12$examplehashedpassword456jkl', 'user'),
-('Ana', 'Lopez', 'ana.lopez@example.com', 'analopez', '$2b$12$examplehashedpassword567mno', 'user'),
-('Ramon', 'Martinez', 'ramon.martinez@example.com', 'ramonmartinez', '$2b$12$examplehashedpassword678pqr', 'user'),
-('Carmen', 'Torres', 'carmen.torres@example.com', 'carmentorres', '$2b$12$examplehashedpassword789stu', 'user'),
-('Pedro', 'Gonzales', 'pedro.gonzales@example.com', 'pedrogonzales', '$2b$12$examplehashedpassword890vwx', 'user'),
-('Sofia', 'Ramirez', 'sofia.ramirez@example.com', 'sofiaramirez', '$2b$12$examplehashedpassword901yz1', 'user'),
-('Miguel', 'Mendoza', 'miguel.mendoza@example.com', 'miguelmendoza', '$2b$12$examplehashedpassword012abc', 'user'),
-('Carlo', 'Flores', 'carlo.flores@example.com', 'carloflores', '$2b$12$examplehashedpassword123def', 'user'),
-('Elena', 'Bautista', 'elena.bautista@example.com', 'elenabautista', '$2b$12$examplehashedpassword234ghi', 'user'),
-('Manuel', 'Dela Cruz', 'manuel.delacruz@example.com', 'manueldelacruz', '$2b$12$examplehashedpassword345jkl', 'user'),
-('Rosa', 'Navarro', 'rosa.navarro@example.com', 'rosanavarro', '$2b$12$examplehashedpassword456mno', 'user'),
-('Diego', 'Aquino', 'diego.aquino@example.com', 'diegoaquino', '$2b$12$examplehashedpassword567pqr', 'user'),
-('Liza', 'Villanueva', 'liza.villanueva@example.com', 'lizavillanueva', '$2b$12$examplehashedpassword678stu', 'user'),
-('Andres', 'Morales', 'andres.morales@example.com', 'andresmorales', '$2b$12$examplehashedpassword789vwx', 'user'),
-('Gloria', 'Salazar', 'gloria.salazar@example.com', 'gloriasalazar', '$2b$12$examplehashedpassword890yz1', 'user'),
-('Rico', 'Fernandez', 'rico.fernandez@example.com', 'ricofernandez', '$2b$12$examplehashedpassword901abc', 'user'),
-('Teresa', 'Castillo', 'teresa.castillo@example.com', 'teresacastillo', '$2b$12$examplehashedpassword012def', 'user'),
-('Paolo', 'Estrada', 'paolo.estrada@example.com', 'paoloestrada', '$2b$12$examplehashedpassword123ghi', 'user'),
-('Diana', 'Ponce', 'diana.ponce@example.com', 'dianaponce', '$2b$12$examplehashedpassword234jkl', 'user'),
-('Enrique', 'Rojas', 'enrique.rojas@example.com', 'enriquerojas', '$2b$12$examplehashedpassword345mno', 'admin'),
-('Maricar', 'Velasco', 'maricar.velasco@example.com', 'maricarvelasco', '$2b$12$examplehashedpassword456pqr', 'user'),
-('Noel', 'Aquino', 'noel.aquino@example.com', 'noelaquino', '$2b$12$examplehashedpassword567stu', 'user');
+('John Daniel', 'Garan', 'john.garan@example.com', 'johngaran', '$2b$12$examplehashedpassword567mno', 'admin');
+
+INSERT INTO users (first_name, last_name, email, username, password) VALUES
+('Brandon', 'Abuya', 'brandon.abuya@example.com', 'brandonabuya', '$2b$12$examplehashedpassword123abc'),
+('Nicky Ronald', 'Cadalig', 'nicky.cadalig@example.com', 'nickycadalig', '$2b$12$examplehashedpassword234def'),
+('Gabriel Mark', 'Capalad', 'gabriel.capalad@example.com', 'gabrielcapalad', '$2b$12$examplehashedpassword345ghi'),
+('Ann Marielle', 'Del Rosario', 'ann.delrosario@example.com', 'anndelrosario', '$2b$12$examplehashedpassword456jkl'),
+('Peter Alvir', 'Gonzales', 'peter.gonzales@example.com', 'petergonzales', '$2b$12$examplehashedpassword678pqr'),
+('Jomel David', 'Poquiz', 'jomel.poquiz@example.com', 'jomelpoquiz', '$2b$12$examplehashedpassword789stu'),
+('Glen Jarine', 'Ocampo', 'glen.ocampo@example.com', 'glenocampo', '$2b$12$examplehashedpassword890vwx'),
+('Hsisan Angel', 'Romero', 'hsisan.romero@example.com', 'hsisanromero', '$2b$12$examplehashedpassword901yz1'),
+('Joeniesus', 'Vidal', 'joeniesus.vidal@example.com', 'joeniesusvidal', '$2b$12$examplehashedpassword012abc');
