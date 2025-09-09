@@ -10,7 +10,7 @@ SELECT
 -- Query each user's posts along with post titles and excerpts (for preview)
 SELECT
     "u"."username",
-    "p"."post title",
+    "p"."title" AS "post title",
     "p"."excerpt"
     FROM "users" AS "u"
     JOIN "posts" AS "p" ON "u"."id" = "p"."user_id";
@@ -24,3 +24,12 @@ SELECT
     JOIN "users" AS "a" ON "p"."user_id" = "a"."id"
     JOIN "post_categories" AS "pc" ON "p"."id" = "pc"."post_id"
     JOIN "categories" AS "c" ON "pc"."category_id" = "c"."id";
+
+-- Query posts and count their likes
+SELECT
+    "p"."title" AS "post title",
+    COUNT("l"."post_id") AS "likes"
+    FROM "posts" AS "p"
+    JOIN "likes" AS "l" ON "p"."id" = "l"."post_id"
+    GROUP BY "p"."title"
+    ORDER BY "likes" DESC;
