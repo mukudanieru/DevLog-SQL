@@ -1,11 +1,10 @@
 INSERT INTO profiles (user_id, profile_picture, bio, social_links) VALUES
-(1, 'https://example.com/profiles/john.jpg', 'Hey, I''m John Daniel! Open-source contributor and software engineer who loves to build things that make a difference. Always open to collaboration—let''s make something awesome.', '{"x": "https://x.com/mukudanieru", "github": "https://github.com/mukudanieru"}'),
-(2, 'https://example.com/profiles/brandon.jpg', 'Hi, I''m Brandon! A tech enthusiast who loves gaming and building cool stuff.', '{"x": "https://x.com/brandonabuya", "github": "https://github.com/brandonabuya"}'),
-(3, 'https://example.com/profiles/nicky.jpg', 'Nicky Ronald Cadalig, aspiring developer fueled by coffee and curiosity.', '{"x": "https://x.com/nickycadalig", "github": "https://github.com/nickycadalig"}'),
-(4, 'https://example.com/profiles/gabriel.jpg', 'Yo, I''m Gabriel! A self-taught code tinkerer who''s always looking for new ways to challenge myself with tech. If you''re into problem-solving, let''s chat.', '{"x": "https://x.com/gabrielcapalad", "github": "https://github.com/gabrielcapalad"}'),
-(5, 'https://example.com/profiles/ann.jpg', 'Ann Marielle Del Rosario, web designer who thinks good typography can save the world.', '{"x": "https://x.com/anndelrosario", "github": "https://github.com/anndelrosario"}'),
-(6, 'https://example.com/profiles/peter.jpg', 'Peter Alvir Gonzales, professional overthinker who secretly enjoys writing unit tests.', '{"x": "https://x.com/petergonzales", "github": "https://github.com/petergonzales"}'),
-(7, 'https://example.com/profiles/jomel.jpg', 'Jomel David Poquiz, developer who collects error messages like they''re Pokémon.', '{"x": "https://x.com/jomelpoquiz", "github": "https://github.com/jomelpoquiz"}'),
-(8, 'https://example.com/profiles/glen.jpg', 'Glen Jarine Ocampo, front-end creative who designs pixels and argues with CSS daily.', '{"x": "https://x.com/glenocampo", "github": "https://github.com/glenocampo"}'),
-(9, 'https://example.com/profiles/hsisan.jpg', 'Hsisan Angel Romero — loves data, hates semicolons, somehow survives both.', '{"x": "https://x.com/hsisanromero", "github": "https://github.com/hsisanromero"}'),
-(10, 'https://example.com/profiles/joeniesus.jpg', 'Hi, I''m Joeniesus! Software Engineer specializing in web development. I love diving deep into front-end and back-end technologies to build fast, responsive, and user-friendly web applications.', '{"x": "https://x.com/joeniesusvidal", "github": "https://github.com/joeniesusvidal"}');
+(1, 'https://example.com/profiles/john.jpg', 
+    'Hey, I''m John Daniel! Open-source contributor and software engineer who loves to build things that make a difference. Always open to collaboration—let''s make something awesome.', 
+    '{"x": "https://x.com/mukudanieru", "github": "https://github.com/mukudanieru"}'),
+(2, 'https://example.com/profiles/brandon.jpg', 
+    'Hi, I''m Brandon! A tech enthusiast who loves gaming and building cool stuff.', 
+    '{"x": "https://x.com/brandonabuya", "github": "https://github.com/brandonabuya"}'),
+(3, 'https://example.com/profiles/joeniesus.jpg', 
+    'Hi, I''m Joeniesus! Software Engineer specializing in web development. I love diving deep into front-end and back-end technologies to build fast, responsive, and user-friendly web applications.', 
+    '{"x": "https://x.com/joeniesusvidal", "github": "https://github.com/joeniesusvidal"}');

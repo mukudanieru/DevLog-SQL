@@ -1,6 +1,6 @@
 DROP TABLE IF EXISTS 
-    post_category,
-    category,
+    post_categories,
+    categories,
     likes,
     posts,
     profiles,
