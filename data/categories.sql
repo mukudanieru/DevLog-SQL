@@ -1,4 +1,4 @@
-INSERT INTO category (title, slug) VALUES
+INSERT INTO categories (title, slug) VALUES
 ('Artificial Intelligence and Machine Learning', 'artificial-intelligence-and-machine-learning'),
 ('C', 'c'),
 ('C#', 'c-sharp'),
