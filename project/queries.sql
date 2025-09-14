@@ -11,9 +11,11 @@ SELECT
 SELECT
     "u"."username",
     "p"."title" AS "post title",
-    "p"."excerpt"
+    get_post_like("p"."id") AS "likes"
+    -- "p"."excerpt"
     FROM "users" AS "u"
-    JOIN "posts" AS "p" ON "u"."id" = "p"."user_id";
+    JOIN "posts" AS "p" ON "u"."id" = "p"."user_id"
+    ORDER BY "likes" DESC, "post title";
 
 -- Query posts grouped by category
 SELECT
@@ -32,4 +34,4 @@ SELECT
     FROM "posts" AS "p"
     JOIN "likes" AS "l" ON "p"."id" = "l"."post_id"
     GROUP BY "p"."title"
-    ORDER BY "likes" DESC;
+    ORDER BY "likes" DESC, "post title";
