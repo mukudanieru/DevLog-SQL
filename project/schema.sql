@@ -55,3 +55,14 @@ CREATE TABLE post_categories (
     FOREIGN KEY (post_id) REFERENCES posts (id) ON DELETE CASCADE,
     FOREIGN KEY (category_id) REFERENCES categories (id) ON DELETE CASCADE
 );
+
+-- Index for quickly finding posts by user
+CREATE INDEX idx_posts_user_id ON posts(user_id);
+
+-- Indexes to optimize lookups and joins on the likes table
+CREATE INDEX idx_likes_user_id ON likes(user_id);
+CREATE INDEX idx_likes_post_id ON likes(post_id);
+
+-- Indexes to improve performance of joins between posts and categories
+CREATE INDEX idx_post_categories_post_id ON post_categories(post_id);
+CREATE INDEX idx_post_categories_category_id ON post_categories(category_id);
