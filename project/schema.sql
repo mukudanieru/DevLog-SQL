@@ -1,3 +1,4 @@
+-- Represent blog schema
 CREATE TYPE user_role AS ENUM ('admin', 'user');
 
 CREATE TABLE users (
