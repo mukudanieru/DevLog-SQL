@@ -15,3 +15,14 @@ FROM "users" AS "u"
 JOIN "posts" AS "p" ON "u"."id" = "p"."user_id"
 GROUP BY "u"."username"
 ORDER BY "post count" DESC;
+
+-- Query each users' with their number of posts and likes received
+SELECT
+    "u"."username",
+    "u"."email",
+    COUNT("p"."id") as "post count",
+    COUNT("l"."post_id") as "total likes"
+FROM "users" AS "u"
+JOIN "posts" AS "p" ON "u"."id" = "p"."user_id"
+JOIN "likes" AS "l" ON "p"."id" = "l"."post_id"
+GROUP BY "u"."username", "u"."email";

@@ -26,9 +26,10 @@ ORDER BY "p"."created_at" DESC;
 -- Query posts by most likes 
 SELECT
     "u"."username",
-    "p"."title" AS "post title",
-    "p"."excerpt" AS "post excerpt",
+    "p"."title" AS "post_title",
+    "p"."excerpt" AS "post_excerpt",
+    p.created_at,
     get_post_likes("p"."id") AS "likes"
 FROM "users" AS "u"
-JOIN "posts" AS "p" ON "u"."id" = "p"."user_id"
+JOIN "posts" AS "p" ON "u"."id" = "p"."user_id";
 ORDER BY "likes" DESC, "post title" ASC;
