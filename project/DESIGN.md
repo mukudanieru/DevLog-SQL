@@ -2,8 +2,6 @@
 
 #### By John Daniel C. Garan
 
-Video overview: <URL HERE>
-
 ## Scope
 
 This project is designed to support DevLog, a soon-to-be blogging platform aimed at developers and tech enthusiasts to share their knowledge, experiences, and insights within a community. The goal of DevLog is to create an environment where people in the tech field can publish articles, document their learning journeys, or exchange ideas. To bring this vision to life, I designed a relational database that serves as the foundation of DevLog. The database includes the following key entities:
